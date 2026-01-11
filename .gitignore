@@ -28,5 +28,20 @@ go.work.sum
 .env
 
 # Editor/IDE
-# .idea/
-# .vscode/
+.idea/
+.vscode/
+
+build/bitbake-cookerdaemon.log
+build/bitbake.lock
+build/cache/
+build/conf/
+build/tmp-aarch64/
+build/tmp/
+layers/bitbake-cookerdaemon.log
+layers/meta-openembedded/
+layers/meta-st-stm32mp/
+layers/meta-swupdate/
+layers/poky/
+
+
+
