@@ -37,6 +37,12 @@ git clone -b walnascar https://github.com/STMicroelectronics/meta-st-stm32mp.git
 ```
 cd /root/oe-gridbeat
 source layers/poky/oe-init-build-env build
+
+bitbake mc:aarch64:gridbeat-image -c fetch
+bitbake mc:aarch64:gridbeat-image --runall=fetch
+
+bitbake mc:aarch64:uninative-tarball -c fetch || true
+
 bitbake mc:aarch64:gridbeat-image
 bitbake mc:x86_64:gridbeat-image mc:aarch64:gridbeat-image mc:stm32mp257:gridbeat-image
 ```
