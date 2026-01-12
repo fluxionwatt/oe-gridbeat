@@ -3,15 +3,13 @@
 
 ### Build
 
-# Host 配置
+##### Host 配置
 ```bash
-sudo dnf install -y epel-release
-sudo dnf install -y chrpath lz4 rpcgen
+dnf install -y epel-release
+dnf install -y chrpath lz4 rpcgen
 ```
 
 ```bash
-# Before starting, ensure that you have Go (version 1.25 or higher) and npm (version 25.X or higher) installed.
-
 # source code
 git clone https://github.com/fluxionwatt/oe-gridbeat
 
@@ -46,3 +44,4 @@ bitbake mc:aarch64:uninative-tarball -c fetch || true
 bitbake mc:aarch64:gridbeat-image
 bitbake mc:x86_64:gridbeat-image mc:aarch64:gridbeat-image mc:stm32mp257:gridbeat-image
 ```
+

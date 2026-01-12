@@ -7,6 +7,7 @@ IMAGE_FEATURES += "ssh-server-openssh"
 
 IMAGE_INSTALL:append = " \
   networkmanager \
+  chrony \
   firewalld nftables \
   swupdate swupdate-www \
   gridbeat \
